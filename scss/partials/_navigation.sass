@@ -4,23 +4,46 @@ header nav
 	.logo, ul.nav-links
 		float: left
 	.logo 
-		margin: 30px 70px 30px 0
+		margin: 30px 50px 30px 0
+		+at(1160px)
+			margin-right: 30px
 	.meta-links 
 		float: right
+		margin-top: 35px
 		+clearfix
+		.search-container 
+			float: left
+			&:after
+				content: "\f002"
+				font-family: FontAwesome
+				color: #a7a7a8
+				position: relative
+				left: -38px
+				top: 7px
+
 		.nav-search 
 			float: left 
 			width: 200px
+			background: $grey
+			border: 1px solid #dcdcdc
+			box-shadow: none
+			border-radius: 150px
+			font-size: 16px
+			height: 41px
+			padding-left: 20px
 		.login-buttons 
 			float: right
 	ul.nav-links 
 		list-style: none
 		padding: 0
-		margin: 40px 0 0 0
+		margin: 45px 0 0 0
 		height: 100%
+		font-size: 16px
 		li 
 			display: inline
 			margin-right: 30px
+			&:last-of-type
+				margin-right: 0
 			&:hover 
 				a 
 					color: $red
