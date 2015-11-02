@@ -1,0 +1,18 @@
+//helper classes
+
+.padding1{
+	padding: 1rem 0;
+}
+.padding2{
+	padding: 2rem 0;
+}
+.link-secondary{
+	color: $green;
+	&:hover{
+		color: $red	
+	}
+}
+
+.green{
+	color:$green!important;
+}

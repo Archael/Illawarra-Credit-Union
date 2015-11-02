@@ -1,7 +1,11 @@
 //global
 
 a{
+	color:$red;
 	transition: all 0.5s ease;
+	&:hover,&:focus{
+		color:$green;
+	}
 }
 .row{
 	max-width: 69.38rem;
@@ -117,6 +121,54 @@ ul.apps li {
     	border:1px solid #9c9da0;
     	border-radius:5px;
     }
+}
+
+.heading i{
+	margin-right:20px;
+}
+
+// Icon text block
+
+.ikon-holder{
+  float: left;
+}
+.ikon-holder span{
+  text-align: center;
+  font-size:38px;
+  color: $red;
+}
+.ikon-text-inner .heading span{
+	color: $red;
+}
+.ikon-text-outer{
+  padding:0 0 0 56px;
+}
+.ikon-text-inner{
+  margin-bottom:20px;
+}
+
+.search{
+	float:left;
+	position:relative;
+	width:450px;
+	input[type="text"]{
+		float: left;
+		box-sizing:border-box;
+		border: 1px solid gainsboro;
+		box-shadow: none;
+		border-radius: 150px;
+		font-size: 16px;
+		height: 41px;
+		padding:8px 40px 8px 20px;
+	}	
+	&:after {
+		content: "\f002";
+		font-family: FontAwesome;
+		color: #a7a7a8;
+    	position: absolute;
+    	right: 20px;
+    	top: 8px;
+	}	
 }
 
 

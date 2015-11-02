@@ -3,6 +3,10 @@
 section{
 	padding:50px 0;
 }
+
+#home{
+
+} //end Home
 section.one{
 	padding:0 0 25px 0;
 }
@@ -81,24 +85,17 @@ section.six{
 	}	
 }
 
-// Icon text block
 
-.ikon-holder{
-  float: left;
-}
-.ikon-holder span{
-  text-align: center;
-  font-size:38px;
-  color: $red;
-}
-.ikon-text-inner .heading span{
-	color: $red;
-}
-.ikon-text-outer{
-  padding:0 0 0 56px;
-}
-.ikon-text-inner{
-  margin-bottom:20px;
-}
-
+#faq{
+	section.six{
+		background:$black url(../images/faq-footer-bg.jpg) no-repeat 0 0;
+		background-size:cover;
+		a{
+			color:$red;
+		}
+		.heading{
+			color:$black;
+		}
+	}
+} //end FAQ
 
