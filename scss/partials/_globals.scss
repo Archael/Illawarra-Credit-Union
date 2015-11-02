@@ -1,0 +1,122 @@
+//global
+
+a{
+	transition: all 0.5s ease;
+}
+.row{
+	max-width: 69.38rem;
+}
+.row.wide{
+	max-width: 73.13rem;
+}
+.full-width{
+	max-width:100%;
+	width:100%;
+}
+// =======================================================================// 
+// Header      
+// =======================================================================// 
+
+header.page{
+
+}
+
+// =======================================================================// 
+// Footer
+// =======================================================================//
+
+footer.page{
+	width:100%;
+	background-color:#2f2f2f;
+	min-height:300px;
+	.row{
+		padding:50px 0;
+	}
+	h3{
+		margin-bottom:20px;
+		color:#fff;
+	}
+	ul{
+		margin:0;
+		list-style:none;
+		a{
+			color:#919292;
+			&:hover{
+				color:$darkRed;
+			}
+		}
+	}
+	.social{
+		a{
+			display:inline-block;
+			width:39px;
+			height:39px;
+			text-align: center;
+			background-color:$red;
+			border-radius:50%;
+			&:hover{
+				transform: scale(1.1);
+			}
+			i{
+				font-size:24px;
+				color: white;
+				padding-top:7px;
+			}		
+		}
+		margin-bottom: 10px; 
+	}
+	.bottom{
+		width:100%;
+		background-color:#000;
+		.row{
+			padding:20px 0;
+			p{
+				font-size:0.750rem;
+				line-height: 1rem;
+			}		
+		}		
+	} 
+}
+
+/* WYSIWYG Content Formatting */
+.editable{
+
+}
+
+hr.down{
+    height: 1px;
+    background: #7F7F7F;
+    position:relative;
+    margin-left:-15px;
+    margin-right:-15px;	
+	&:after,
+	&:before {
+	    content:'';
+	    position: absolute;
+	    border-style: solid;
+	    border-width: 15px 15px 0;
+	    border-color: #FFFFFF transparent;
+	    display: block;
+	    width: 0;
+	    z-index: 1;
+	    top:-1px;
+	    left: 49.5%; // IE fail
+	    left:calc(50% - 15px);
+	}
+	&:before{
+    	border-color: #7F7F7F transparent;		
+	}
+}
+
+ul.apps li {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding-right: 5%;
+    img{
+    	border:1px solid #9c9da0;
+    	border-radius:5px;
+    }
+}
+
+

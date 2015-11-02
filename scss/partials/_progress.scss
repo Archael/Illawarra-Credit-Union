@@ -1,0 +1,148 @@
+
+/* Progress Bar 2*/
+
+.wizard {
+  margin-top: 40px;
+  padding: 0 0 10px 0;
+  > .wizard-step{
+    padding: 0; 
+    position: relative;
+    :first-child.active > .progress > .progress-bar {width:0%;}
+    /* Disabled status */
+    .disabled
+      > .wizard-dot {
+        background-color: #d0d0d0;
+      }
+      a.wizard-dot{ 
+        pointer-events: none;
+      }
+    /* Complete status */
+    .complete > .progress > .progress-bar {
+      width:100%;
+    }            
+    > .wizard-stepnum {
+      color: #5c5c5c; 
+      font-size: 16px; 
+      margin-bottom: 5px;
+    }
+    > .wizard-info {
+      color: #999; 
+      font-size: 14px;
+    }
+    > .wizard-dot {
+      position: absolute; 
+      width: 14px; 
+      height: 14px; 
+      display: block; 
+      background: #2c8184; 
+      top: 21px; 
+      margin-top: -7px; 
+      margin-left: -7px; 
+      border-radius: 50%;
+      &:last-child{
+        left:100%;
+      }
+    }
+    > .progress {
+      position: relative; 
+      margin: 20px 0;
+      height:1px;
+      overflow: hidden;
+      background-color: #d0d0d0;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      border:0;
+      padding:0;
+      > .progress-bar {
+        width:0px; 
+        box-shadow: none; 
+        background: #2c8184;
+      }      
+    }        
+  }
+}
+
+
+p.rate{
+  position: relative;
+}
+.rate span{
+  vertical-align: top;
+  display:inline-block;
+  font-size:54px;
+  line-height:80px;      
+}
+.rate span:nth-child(1){
+  font-size:92px;
+  line-height:100px;
+  font-weight:700;
+  margin-right:-10px;
+}
+.rate span:nth-child(2){
+  letter-spacing: -8px;
+  font-size:66px;
+  line-height: 70px;
+}
+.rate span:nth-child(3){
+    font-weight: 700;
+    letter-spacing: -3px;
+    position: relative;
+}
+.rate span:nth-child(3) sub{
+  position:absolute;
+  left:4px;
+  bottom:-3px;
+  width:120px;
+  text-align: left;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+.rate span:nth-child(4){
+  font-size:40px;
+  line-height:70px;
+  margin-left:-3px;
+} 
+.rate span:nth-child(5){
+  font-size:26px;
+  line-height: 78px;
+  margin-left:-3px;
+}
+.rate sub {
+    position: absolute;
+    right: 66px;
+    bottom: 14px;
+    font-size: 18px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+/*
+.icon-piggy:before{
+  content:"";
+  width:40px;
+  height:37px;
+  display:inline-block;
+  background: url(images/icon-piggy.png) no-repeat 0 0;
+  background-size:88%;
+}  
+.icon-home:before{
+  content:"";
+  width:38px;
+  height:29px;
+  display:inline-block;
+  background: url(images/icon-home.png) no-repeat 0 0;
+}
+*/
+.img-holder{
+  position:relative;
+}
+.img-holder img{
+  position: absolute;
+  max-width:100%;
+  left:0;
+  top:0;
+}
+.inner{
+  float:left;
+  background-color: #666;
+}
+

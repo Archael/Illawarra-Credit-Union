@@ -1,0 +1,104 @@
+//sections
+
+section{
+	padding:50px 0;
+}
+section.one{
+	padding:0 0 25px 0;
+}
+
+section.two{
+
+}
+section.three{
+	background-image:url(../images/slider-img.jpg);
+	background-size:cover;
+	h2{
+		color:#fff;
+		font-size: 60px;
+		line-height: 84px;
+	}
+	.icon-list{
+		li{
+			list-style-type: image;	
+		}
+		span{
+			color:$red;
+		}
+	}
+	.why-bank{
+		padding-left:3rem;
+	}
+}
+
+section.four{
+
+}
+section.five{
+	background-color:#f6f6f6;
+	h3{
+		color: $green;
+		font-size: 30px;
+		line-height: 26px;
+		margin-bottom:20px;
+	}
+	p{
+		font-size:20px;
+		line-height: 24px;
+	}	
+}
+
+section.six{
+	background-color:#d0d0d0;
+	p{
+		text-align:center;
+	}
+	p.heading, a{
+		color:$red;
+	}
+	a i{
+		font-size:10px;
+		margin-left:7px;
+	}
+	p.copy{
+		color:#60605f;
+		min-height:72px;
+	}	
+}
+
+.type-2{
+	h3{
+		font-size:30px;
+		line-height: 26px;
+		margin-bottom: 50px;
+		color:#1d1d1b;
+		span{
+			color:$red;
+		}
+	}
+	hr{
+		margin-bottom: 50px;
+	}	
+}
+
+// Icon text block
+
+.ikon-holder{
+  float: left;
+}
+.ikon-holder span{
+  text-align: center;
+  font-size:38px;
+  color: $red;
+}
+.ikon-text-inner .heading span{
+	color: $red;
+}
+.ikon-text-outer{
+  padding:0 0 0 56px;
+}
+.ikon-text-inner{
+  margin-bottom:20px;
+}
+
+

@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>ICU Dev</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
-
     <!-- fonts and 3rd party -->
     <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
-    <header>
+    <header class="page">
       <nav>
-        <div class="row">
+        <div class="row wide">
           <div class="medium-12 columns">
             <div class="logo">
               <a href="#"><img src="images/logo.png" alt="Illawarra Credit Union"></a>
@@ -25,7 +25,7 @@
             <ul class="nav-links">
               <li class="has-dropdown"><a href="#">Personal</a></li>
               <li class="has-dropdown"><a href="#">Business</a></li>
-              <li class="has-dropdown"><a href="#">Help & Support</a></li>
+              <li class="has-dropdown"><a href="#">Help &amp; Support</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
             <div class="meta-links">
@@ -42,9 +42,16 @@
       </nav>
     </header>
 
-
+    <div class="row full-width">
+      <div class="slider">
+        <div><img src="images/slider.png" alt=""></div>
+        <div><img src="images/slider.png" alt=""></div>
+        <div><img src="images/slider.png" alt=""></div>
+      </div>
+    </div>
     <div class="row">
       <div class="medium-12 columns">
+        <p><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i></p>
         <span class="breadcrumb">This is the breadcrumb, it’s 16pt in #ababaa</span>
         <h1>This is the H1, it’s 50pt with 60pt line-height in #1d1d1b </h1>
         <h2>This is the H2, it’s 30pt with 36pt line-height in #1d1d1b</h2>
@@ -57,28 +64,865 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam beatae ab molestiae commodi, quis hic assumenda culpa optio! Delectus provident quos ut voluptatum! Illum incidunt, cum repudiandae numquam nam omnis maiores dolor nemo provident tempore recusandae perspiciatis pariatur fugiat rem explicabo dolorem ipsum. Aut repellendus at ipsa natus, enim doloremque possimus molestiae? Ipsa, iusto aut nesciunt ipsam. Fuga, nisi, mollitia.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae eos veniam quibusdam, dolores, recusandae culpa vero maxime esse animi, quaerat quis facere vel ducimus dolore numquam consequuntur, eius! Atque facere, accusamus alias nobis, nisi sapiente earum! Minima soluta nobis, officia temporibus nostrum repellendus animi iste, enim laboriosam cum quod perspiciatis, eveniet quas, veritatis saepe. Cupiditate maxime corporis quam incidunt!</p>
+        <span class="breadcrumb">Breadcrumb</span>
+        <h1>Applying for a home loan</h1>
+        <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas a elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero, sit amet venenatis felis. Quisque dictum elit ipsum, viverra elit tristique at.</p>
+        <hr />
+        <div data-alert class="alert-box secondary">
+          <a href="#" class="close"><i class="fa fa-close"></i></a>
+          <h3>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus.</h3>
+          <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Aenean luctus pellentesque leo, nec tempus risus aliquam tempus.</p>
+        </div>
       </div>
     </div>
-
     <div class="row">
-      <div class="medium-12 columns">      
-        <a href="#" class="button medium secondary has-arrow arrow-left">Go Back</a>
-        <a href="#" class="button medium secondary has-arrow arrow-right">Apply</a>
-        <a href="#" class="button medium primary has-arrow arrow-right">Find out more</a>
+      <div class="medium-9 columns">
+        <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. <strong>Maecenas a elit tempus</strong>, hendrerit leo at, viverra tortor. Quisque ac suscipit libero, sit amet venenatis felis. Quisque dictum elit ipsum, viverra elit tristique at. Mauris non mauris risus. <strong>Duis tristique iaculis leo</strong>, sit amet.</p>
+      </div>
+      <div class="medium-3 columns">
+        <p class="text-right"><a class="link-secondary" href="#">* Indicates a required field</a></p>
       </div>
     </div>
-
     <div class="row">
       <div class="medium-12 columns">
-        <a href="#" class="button small secondary">Register</a>
-        <a href="#" class="button small primary">Login</a>
+        <form>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Input Label
+                <input type="text" placeholder="large-12.columns" />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <label>Input Label
+                <input type="text" placeholder="large-4.columns" />
+              </label>
+            </div>
+            <div class="large-4 columns">
+              <label>Input Label
+                <input type="text" placeholder="large-4.columns" />
+              </label>
+            </div>
+            <div class="large-4 columns">
+              <div class="row collapse">
+                <label>Input Label</label>
+                <div class="small-9 columns">
+                  <input type="text" placeholder="small-9.columns" />
+                </div>
+                <div class="small-3 columns">
+                  <span class="postfix">.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Select Box
+                <select>
+                  <option value="husker">Husker</option>
+                  <option value="starbuck">Starbuck</option>
+                  <option value="hotdog">Hot Dog</option>
+                  <option value="apollo">Apollo</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Choose Your Favorite</label>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+            </div>
+            <div class="large-6 columns">
+              <label>Check these out</label>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Textarea Label
+                <textarea placeholder="small-12.columns"></textarea>
+              </label>
+            </div>
+          </div>
+        </form>  
       </div>
     </div>
-    
+      <!-- 2 column -->
+      <div class="row padding1">
+      <div class="medium-6 columns">
+        <p class="heading">Advice</p>
+        <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>      
+        <p><a href="#" class="button medium primary has-arrow arrow-right">Find out more</a></p>
+      </div>
+      <div class="medium-6 columns">      
+        <p class="heading">Tools and Calculators</p>
+        <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>      
+        <p><a href="#" class="button medium primary has-arrow arrow-right">Find out more</a></p>
+      </div>
+    </div>
+
+    <!-- 3 column -->
+    <div class="row padding1">
+    <div class="medium-4 columns">
+      <p class="heading">Internal document resolution document</p>
+      <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>      
+      <p><a href="#" class="download">Download brochure PDF <i class="fa fa-chevron-right"></i></a></p>
+    </div>
+    <div class="medium-4 columns">      
+      <p class="heading">Compliments, complaints and general feedback</p>
+      <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>      
+      <p><a href="#" class="download">Download brochure PDF <i class="fa fa-chevron-right"></i></a></p>
+    </div>
+    <div class="medium-4 columns">      
+      <p class="heading">Internal document resolution document</p>
+      <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>      
+      <p><a href="#" class="download">Download brochure PDF <i class="fa fa-chevron-right"></i></a></p>
+    </div>    
+  </div> 
+
+  <!-- 4 column -->
+  <div class="row padding1">
+    <div class="medium-3 columns">
+      <p class="heading">Repayments</p>
+      <p>Fusce porttitor ante nunc, ut tincidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique.</p>      
+      <p><a href="#" class="download">View the calculator <i class="fa fa-chevron-right"></i></a></p>
+    </div>
+    <div class="medium-3 columns">
+      <p class="heading">Affordability</p>
+      <p>Fusce porttitor ante nunc, ut tincidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique.</p>      
+      <p><a href="#" class="download">View the calculator <i class="fa fa-chevron-right"></i></a></p>
+    </div>
+    <div class="medium-3 columns">
+      <p class="heading">Existing Calculators</p>
+      <p>Fusce porttitor ante nunc, ut tincidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique.</p>      
+      <p><a href="#" class="download">View the calculator <i class="fa fa-chevron-right"></i></a></p>
+    </div>
+    <div class="medium-3 columns">
+      <p class="heading">Mobile application</p>
+      <p>Fusce porttitor ante nunc, ut tincidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique.</p>      
+      <p><a href="#" class="download">View the calculator <i class="fa fa-chevron-right"></i></a></p>
+    </div>            
+  </div>
+
+<!-- Progress Bar -->
+
+  <div class="row wizard">
+      
+      <div class="medium-2 columns wizard-step complete">
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+        <span class="wizard-dot"></span>
+        <div class="text-center wizard-stepnum">Found a house</div>
+      </div>
+
+      <div class="medium-2 columns wizard-step complete">
+        <div class="progress"><div class="progress-bar"></div></div>
+        <span class="wizard-dot"></span>
+        <div class="text-center wizard-stepnum">Applied for a loan</div>
+      </div>
+
+      <div class="medium-2 columns wizard-step complete">
+        <div class="progress"><div class="progress-bar"></div></div>
+        <span class="wizard-dot"></span>
+        <div class="text-center wizard-stepnum">Pre Approval</div>
+      </div>  
+
+      <div class="medium-2 columns wizard-step complete">
+        <div class="progress"><div class="progress-bar"></div></div>
+        <span class="wizard-dot"></span>
+        <div class="text-center wizard-stepnum">Loan Conditions Received</div>
+      </div>
+
+      <div class="medium-2 columns wizard-step active">
+        <div class="progress"><div class="progress-bar"></div></div>
+        <span class="wizard-dot"></span>
+        <div class="text-center wizard-stepnum">Initial loan proposal received</div>
+      </div>
+
+      <div class="medium-2 columns wizard-step disabled">
+        <div class="progress"><div class="progress-bar"></div></div>
+        <div class="text-center wizard-stepnum">Disclosure list sent</div>
+        <span class="wizard-dot"></span>
+        <span class="wizard-dot"></span>
+      </div>                   
+  </div>
 
 
+
+  <!-- 3 column -->
+  <div class="row">
+    <div class="medium-4 columns">
+      <blockquote>
+      <i class="fa fa-quote-left"></i>
+      <p>Aenean luctus pellentesque leo, tempus risus aliquam tempus. Ecenas a elit tempus, hendrerit."</p>
+      <footer>
+      <cite>John Smith <span>| Manager</span></cite>
+      </footer>
+      </blockquote>
+    </div>
+    <div class="medium-4 columns">
+      <blockquote>
+      <i class="fa fa-quote-left"></i>
+      <p>Aenean luctus pellentesque leo, tempus risus aliquam tempus. Ecenas a elit tempus, hendrerit."</p>
+      <footer>
+      <cite>Jane Smith <span>| Manager</span></cite>
+      </footer>
+      </blockquote>
+    </div> 
+    <div class="medium-4 columns">
+      <blockquote>
+      <i class="fa fa-quote-left"></i>
+      <p>Aenean luctus pellentesque leo, tempus risus aliquam tempus. Ecenas a elit tempus, hendrerit."</p>
+      <footer>
+      <cite>John Smith <span>| Manager</span></cite>
+      </footer>
+      </blockquote>
+    </div>            
+  </div> 
+  <!-- 3 column panels -->
+  <div class="row padding1">
+    <div class="medium-4 columns">
+    <div class="panel custom">
+      <p class="heading text-center">Everyday Lite</p>
+      <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+      <hr />
+          <p class="rate text-center">
+            <span>4</span>
+            <span>.</span>
+            <span>35<sub>interest rate</sub></span>
+            <span>%</span>
+            <span>pa</span>
+          </p>   
+    </div>
+    </div>
+    <div class="medium-4 columns">
+    <div class="panel custom">
+      <p class="heading text-center">Everyday Lite</p>
+      <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+      <hr />
+          <p class="rate text-center">
+            <span>4</span>
+            <span>.</span>
+            <span>35<sub>interest rate</sub></span>
+            <span>%</span>
+            <span>pa</span>
+          </p>   
+    </div>
+    </div>
+     <div class="medium-4 columns">
+    <div class="panel custom">
+      <p class="heading text-center">Everyday Lite</p>
+      <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+      <hr />
+          <p class="rate text-center">
+            <span>4</span>
+            <span>.</span>
+            <span>35<sub>interest rate</sub></span>
+            <span>%</span>
+            <span>pa</span>
+          </p>   
+    </div>
+    </div>                          
+  </div>   
+
+  <!-- 2 column panels -->
+  <div class="row padding1">
+    <div class="medium-6 columns">
+    <div class="panel custom">
+      <p class="heading">Platinum MasterCard</p>
+      <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>      
+    </div>
+    </div>
+    <div class="medium-6 columns">
+    <div class="panel custom">
+      <p class="heading">Low rate MasterCard</p>
+      <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>      
+    </div>
+    </div>           
+  </div> 
+
+  <!-- 2 column panels -->
+  <div class="row padding1">
+    <div class="medium-6 columns">
+    <div class="panel custom">
+      <div class="row ">
+      <div class="medium-6 columns">
+        <p class="heading icon-piggy">Financial planning</p>
+        <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+      </div>
+      <div class="medium-6 columns">
+          <p class="rate text-center">
+            <span>4</span>
+            <span>.</span>
+            <span>35<sub>interest rate</sub></span>
+            <span>%</span>
+            <span>pa</span>
+          </p> 
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="medium-6 columns">
+    <div class="panel custom">
+      <div class="row">
+        <div class="medium-6 columns">
+          <p class="heading icon-home">Mobile lenders</p>
+          <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>          
+        </div>
+        <div class="medium-6 columns">
+          <p class="rate text-center">
+            <span>4</span>
+            <span>.</span>
+            <span>35<sub>interest rate</sub></span>
+            <span>%</span>
+            <span>pa</span>
+          </p>          
+        </div>
+      </div>      
+    </div>
+    </div>           
+  </div>
+
+  <!-- 2 column panels -->
+  <div class="row padding1">
+    <div class="medium-4 columns">
+    <div class="panel custom">
+      <p class="heading icon-piggy">Everyday banking</p>
+      <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>      
+    </div>
+    </div>
+    <div class="medium-4 columns">
+    <div class="panel custom">
+      <p class="heading icon-piggy">Everyday banking</p>
+      <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>      
+    </div>
+    </div>
+    <div class="medium-4 columns">
+    <div class="panel custom">
+      <p class="heading icon-piggy">Everyday banking</p>
+      <p>Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>      
+    </div>
+    </div>                      
+  </div> 
+
+  <!-- 2 column panels -->
+  <div class="row padding1">
+      <div class="medium-9 columns">
+      <div class="panel">
+        <p class="heading">Meet our mobile lenders</p>
+        <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>
+        <p><a href="#" class="button medium primary has-arrow arrow-right">Find out more</a></p>      
+      </div>                      
+      </div>
+      <div class="medium-3 columns">
+      <div class="img-holder">
+        <img src="images/kids.jpg" alt="" />  
+      </div>                      
+      </div>  
+  </div> 
+
+  <div class="row padding1">
+    <div class="medium-5 columns">
+    <div class="panel">
+      <p class="heading">Meet our mobile lenders</p>
+      <p>Aenean luctus pellentesque leo, nec tempus risus aliquam tempus. Maecenas elit tempus, hendrerit leo at, viverra tortor. Quisque ac suscipit libero.</p>
+      <p><a href="#" class="button medium primary has-arrow arrow-right">Find out more</a></p>      
+    </div>                      
+    </div>
+    <div class="medium-3 columns end">
+    <div class="img-holder">
+      <img src="images/kids.jpg" alt="" />  
+    </div>                      
+    </div>       
+  </div>
+  <!-- Section 2 START -->
+  <section class="two type-2">
+    <div class="row">
+      <div class="medium-12 column">
+        <h3 class="text-center">Find the best <span>package for you</span></h3>
+      </div>
+    </div>
+    <div class="row full-width">
+        <hr class="down" />      
+    </div>
+    <div class="row">
+      <div class="medium-12 columns">
+        <ul class="tabs" data-tab>
+          <li class="tab-title residential active"><a href="#panel1">Residential</a></li>
+          <li class="tab-title investment"><a href="#panel2">Investment</a></li>
+          <li class="tab-title business"><a href="#panel3">Business</a></li>
+        </ul>
+      </div>
+    </div>    
+    <div class="row">
+    <div class="tabs-content">
+      <div class="content active" id="panel1">
+        <div class="medium-3 columns">
+        <div class="panel custom red">
+          <a href="#"></a>
+          <p class="heading text-center">Premium home loan package</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p> 
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>39<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>             
+        </div>
+        </div> 
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Basic variable home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>68<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>81<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>              
+        </div>
+        </div> 
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Standard variable home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>5</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p> 
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>39<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>   
+        </div>
+        </div>
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Fixed rate home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>              
+        </div>
+        </div>        
+      </div>
+      <div class="content" id="panel2">
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Premium home loan package</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p> 
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>39<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>             
+        </div>
+        </div> 
+        <div class="medium-3 columns">
+        <div class="panel custom red">
+          <a href="#"></a>
+          <p class="heading text-center">Basic variable home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>68<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>81<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>              
+        </div>
+        </div> 
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Standard variable home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>5</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p> 
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>39<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>   
+        </div>
+        </div>
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Fixed rate home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>              
+        </div>
+        </div>        
+      </div>
+      <div class="content" id="panel3">
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Premium home loan package</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p> 
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>39<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>             
+        </div>
+        </div> 
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Basic variable home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>68<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>81<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>              
+        </div>
+        </div> 
+        <div class="medium-3 columns">
+        <div class="panel custom red">
+          <a href="#"></a>
+          <p class="heading text-center">Standard variable home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>5</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p> 
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>39<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>   
+        </div>
+        </div>
+        <div class="medium-3 columns">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="heading text-center">Fixed rate home loan</p>
+          <p class="text-center">Fusce porttitor ante nunc, ut tin cidunt ipsum semper ac. Aenean cursus, ipsum tempus tristique pharetra, erat dolor ipsum.</p>
+          <hr />
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>interest rate</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>
+              <p class="rate text-center">
+                <span>4</span>
+                <span>.</span>
+                <span>35<sub>comparison</sub></span>
+                <span>%</span>
+                <span>pa</span>
+              </p>              
+        </div>
+        </div>        
+      </div>                 
+    </div>                              
+    </div>
+  </section>  
+  <!-- Section 3 START -->  
+  <section class="three full-width">
+      <div class="row">
+        <div class="medium-7 column why-bank">
+          <h2 class="white">Why bank<br />with Illawarra<br />credit union?</h2>
+        </div> 
+        <div class="medium-5 column">
+          <div class="panel white">
+            <!-- icon text block -->
+            <div class="ikon-wrap-outer">
+              <div class="ikon-holder">
+                <span>
+                  <i class="fa fa-flag"></i>
+                </span>
+              </div>
+              <div class="ikon-text-outer">
+                <div class="ikon-text-inner">
+                  <p class="heading"><span>We're open and honest to</span><br />help you every step of the way.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor iidunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <!-- icon text block -->
+            <div class="ikon-wrap-outer">
+              <div class="ikon-holder">
+                <span>
+                  <i class="fa fa-flag"></i>
+                </span>
+              </div>
+              <div class="ikon-text-outer">
+                <div class="ikon-text-inner">
+                  <p class="heading"><span>We're open and honest to</span><br />help you every step of the way.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor iidunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div> 
+            <!-- icon text block -->
+            <div class="ikon-wrap-outer">
+              <div class="ikon-holder">
+                <span>
+                  <i class="fa fa-flag"></i>
+                </span>
+              </div>
+              <div class="ikon-text-outer">
+                <div class="ikon-text-inner">
+                  <p class="heading"><span>We're open and honest to</span><br />help you every step of the way.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor iidunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>                                   
+          </div>
+        </div>                
+      </div>  
+  </section>
+  <!-- Section 4 START -->
+  <section class="four type-2">
+    <div class="row">
+      <div class="medium-12 column">
+        <h3 class="text-center">Try our helpful <span>tools and calculators</span></h3>
+      </div>
+    </div>
+    <div class="row full-width">
+        <hr class="down" />      
+    </div>
+    <div class="row">
+      <div class="medium-3 column">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="text-center"><img src="images/icon-repay.png" alt="" /></p>
+          <p class="heading text-center">Repayments</p>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <div class="medium-3 column">
+        <div class="panel custom red">
+          <a href="#"></a>        
+          <p class="text-center"><img src="images/icon-piggy.png" alt="" /></p>
+          <p class="heading text-center">Affordability</p>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <div class="medium-3 column">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="text-center"><img src="images/icon-calc.png" alt="" /></p>
+          <p class="heading text-center">Existing Calculators</p>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <div class="medium-3 column">
+        <div class="panel custom">
+          <a href="#"></a>
+          <p class="text-center"><img src="images/icon-mobile.png" alt="" /></p>
+          <p class="heading text-center">Mobile Application</p>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>                 
+    </div>
+  </section>
+  <!-- Section 5 START -->    
+  <section class="five">
+    <div class="row">
+      <div class="medium-8 column medium-offset-2">
+        <h3 class="text-center">Feeling a little stuck?</h3>
+        <p class="text-center">No stress. Start a live chat with one of our friendly staff;<br />
+        they'll be glad to answer any questions.</p>
+        <p class="text-center">
+          <a href="#" class="button medium primary chat"><i class="fa fa-comment-o fa-flip-horizontal"></i>Chat now</a>
+        </p>
+      </div>
+    </div>
+  </section>
+    <!-- Section 6 START -->
+  <section class="six">
+    <div class="row">
+      <div class="medium-4 column medium-offset-2">
+        <div class="panel white">
+          <p class="heading">Contact Us</p>
+          <p class="copy">Mon to Friday 8:30am - 5:30am<br />Sat 9:00am - 1:00pm</p>
+          <p><a href="#">See contact options<i class="fa fa-chevron-right"></i></a></p>
+        </div>
+      </div>
+      <div class="medium-4 column end">
+        <div class="panel white">
+          <p class="heading">Visit a branch</p>
+          <p class="copy">Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do eiusmod tempor incididunt dolore.</p>
+          <p><a href="#">See branch locations<i class="fa fa-chevron-right"></i></a></p>
+        </div>      
+      </div>      
+    </div>
+  </section>    
+  <footer class="page">
+    <div class="row wide">
+      <div class="medium-3 column">
+        <h3>Our Products</h3>
+        <ul>
+          <li><a href="">Financial planning</a></li>
+          <li><a href="">Banking</a></li>
+          <li><a href="">Lending</a></li>
+          <li><a href="">Savings</a></li>
+          <li><a href="">Insurance</a></li>
+        </ul>
+      </div>
+      <div class="medium-3 column">
+        <h3>Help &amp; Support</h3>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Security information</a></li>
+        </ul>                  
+      </div>
+      <div class="medium-3 column">
+        <h3>Other links</h3>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Security information</a></li>
+          <li><a href="#">Corporate information</a></li>
+          <li><a href="#">Legal information</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>        
+      </div>
+      <div class="medium-3 column">
+        <h3>Connect with ICU</h3>
+        <ul class="list-unstyled">
+          <li class="social">
+            <a target="_blank" href="#"><i class="fa fa-youtube-play"></i></a>
+            <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+        </ul>
+        <h3>Mobile app</h3>
+        <ul class="apps">
+          <li><a href="#"><img width="160" src="images/app-store.png" alt=""></a></li>
+          <li><a href="#"><img width="160" src="images/google-play.png" alt=""></a></li>
+        </ul>               
+      </div> 
+    </div>
+    <div class="bottom">
+      <div class="row">
+        <div class="medium-8 column medium-offset-2">
+          <p class="text-center">
+            BSB 802-249 &copy; Copyright 2014 Community Alliance Credit Union<br /><br />Illawarra Credit Union is a division of Community Alliance Credit Union Limited ABN 14 087 650 771 AFSL/Australian credit licence 245576. 38-40 Young St Wollongong. Please refer to our Financial Services Guide for more information about us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>   
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

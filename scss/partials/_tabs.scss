@@ -1,0 +1,53 @@
+//tabs
+
+ul.tabs{
+	text-align:center;
+	margin:0 0 50px 0!important;
+}
+.tabs .tab-title{
+	margin:0 0.5rem;
+	display:inline-block;
+	float:none;
+}
+
+.tabs .tab-title a{
+    background: #fff;
+    border:1px solid $red;
+    padding: 0.6rem 1rem;
+    min-width: 192px;
+    border-radius: 150px;
+    text-align:center;
+    font-family: "Maven Pro", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color:$red;
+    outline:none;
+    &:before{
+    	font-family: fontAwesome;
+    	display:inline-block;
+    	height:20px;
+    	margin-right:10px;
+    }
+}
+
+.tabs .tab-title a:hover,
+.tabs .tab-title.active a{
+    color:#fff;
+    background:$red;
+}
+.tabs .tab-title.residential a:before{
+    content:"\f015";
+}
+.tabs .tab-title.investment a:before{
+    content:"\f0b1";
+}
+.tabs .tab-title.business a:before{
+    content:"\f155";
+}
+i.inline{
+	display:inline-block;
+	margin-right:10px;
+	font-size:50px;
+	vertical-align:sub;
+}
+i.fa-mobile{
+	//font-size:30px;
+}
